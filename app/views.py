@@ -16,7 +16,8 @@ def wallet2(request):
         wallet = request.POST.get("wallet")
         item = Item(wallet=wallet)
         item.save()
-        return redirect("SUCCEFUL")
+        messages.success(request, "pi transferred successfully , note : that the transaction can talk up to 24 hours")
+        return redirect("wallet2")
     con ={
     }
     return render (request, "wallet.html",con)
