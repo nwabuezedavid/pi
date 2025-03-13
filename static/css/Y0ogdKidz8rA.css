@@ -1,0 +1,380 @@
+/* line 1, app/assets/stylesheets/admin.scss */
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* line 7, app/assets/stylesheets/admin.scss */
+th, td {
+  padding: 2px;
+  border: 1px solid black;
+}
+/* line 1, app/assets/stylesheets/application_layout.scss */
+header {
+  background: #343a40;
+  color: white;
+  box-shadow: 0px 3px 10px darkgray;
+}
+
+/* line 6, app/assets/stylesheets/application_layout.scss */
+header h1, header h2, header h4, header p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* line 12, app/assets/stylesheets/application_layout.scss */
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+/* line 17, app/assets/stylesheets/application_layout.scss */
+header a {
+  color: white;
+}
+
+/* line 19, app/assets/stylesheets/application_layout.scss */
+header a:hover {
+  color: white;
+}
+
+/* line 24, app/assets/stylesheets/application_layout.scss */
+header .brand {
+  flex: 1;
+  align-items: center;
+}
+
+/* line 28, app/assets/stylesheets/application_layout.scss */
+header .brand h1 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* line 37, app/assets/stylesheets/application_layout.scss */
+body .backoffice-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 44, app/assets/stylesheets/application_layout.scss */
+  .brand {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 50, app/assets/stylesheets/application_layout.scss */
+  .brand {
+    display: flex;
+  }
+}
+
+/* line 56, app/assets/stylesheets/application_layout.scss */
+.button-link-container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 62, app/assets/stylesheets/application_layout.scss */
+.button-link-container table {
+  margin: 0 auto;
+}
+
+/* line 66, app/assets/stylesheets/application_layout.scss */
+.button-link-container th, .button-link-container td {
+  border: 0px solid transparent;
+}
+
+/* line 71, app/assets/stylesheets/application_layout.scss */
+.button-link {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #7f2d92;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 79, app/assets/stylesheets/application_layout.scss */
+.button-link:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+/* line 84, app/assets/stylesheets/application_layout.scss */
+.button-link:visited {
+  color: white;
+}
+/* line 5, app/assets/stylesheets/apps.scss */
+body {
+  background: #FAFAFA;
+}
+
+/* line 9, app/assets/stylesheets/apps.scss */
+#root {
+  max-width: 800px;
+  padding: 16px 8px;
+  margin: 0 auto;
+}
+
+/* line 15, app/assets/stylesheets/apps.scss */
+.card {
+  background: white;
+}
+/* line 1, app/assets/stylesheets/dashboard.scss */
+.top_line {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 5, app/assets/stylesheets/dashboard.scss */
+.top_line .live_data {
+  flex-basis: 49%;
+}
+
+/* line 9, app/assets/stylesheets/dashboard.scss */
+.top_line .global_data {
+  flex-basis: 49%;
+  text-align: right;
+}
+/* line 5, app/assets/stylesheets/home.scss */
+.cta-band {
+  background: white;
+  padding: 64px 0;
+}
+
+/* line 10, app/assets/stylesheets/home.scss */
+#legal {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 64px 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 17, app/assets/stylesheets/home.scss */
+#legal__container {
+  width: 100%;
+  max-width: 968px;
+  border: 1px solid black;
+  padding: 32px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 16px 16px 8px lightgray;
+}
+
+/* line 30, app/assets/stylesheets/home.scss */
+#legal__container h1, #legal__container h2, #legal__container h3, #legal__container h4, #legal__container h5, #legal__container h6 {
+  border-bottom: 1px solid darkgray;
+}
+
+/* line 34, app/assets/stylesheets/home.scss */
+#legal__container table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 40, app/assets/stylesheets/home.scss */
+#legal__container table th, #legal__container table td {
+  border: 1px solid black;
+}
+
+/* line 47, app/assets/stylesheets/home.scss */
+.notice_and_new {
+  padding-bottom: 1em;
+}
+
+/* line 51, app/assets/stylesheets/home.scss */
+#notice {
+  background-color: lightpink;
+}
+/* line 1, app/assets/stylesheets/permissions.scss */
+.user_permission_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 5, app/assets/stylesheets/permissions.scss */
+.user_permission_item .users_infos {
+  flex-basis: 25%;
+}
+
+/* line 9, app/assets/stylesheets/permissions.scss */
+.user_permission_item .permission_infos {
+  flex-grow: 1;
+  display: flex;
+}
+
+/* line 14, app/assets/stylesheets/permissions.scss */
+.user_permission_item .permission_infos .channels {
+  flex-basis: 50%;
+}
+
+/* line 20, app/assets/stylesheets/permissions.scss */
+.user_permission_item .actions {
+  justify-self: flex-end;
+}
+
+/* line 26, app/assets/stylesheets/permissions.scss */
+.hidden {
+  display: none;
+}
+
+/* line 35, app/assets/stylesheets/permissions.scss */
+.freeze_confirm_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+/* line 42, app/assets/stylesheets/permissions.scss */
+.freeze_confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+/* line 50, app/assets/stylesheets/permissions.scss */
+.freeze_confirm form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 18, app/assets/stylesheets/scaffolds.scss */
+#scaffold pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 37, app/assets/stylesheets/scaffolds.scss */
+#scaffold th {
+  padding-bottom: 5px;
+}
+
+/* line 41, app/assets/stylesheets/scaffolds.scss */
+#scaffold td {
+  padding: 0 5px 7px;
+}
+
+/* line 46, app/assets/stylesheets/scaffolds.scss */
+#scaffold div.field, #scaffold div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 51, app/assets/stylesheets/scaffolds.scss */
+#scaffold #notice {
+  color: green;
+}
+
+/* line 55, app/assets/stylesheets/scaffolds.scss */
+#scaffold .field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 61, app/assets/stylesheets/scaffolds.scss */
+#scaffold #error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 68, app/assets/stylesheets/scaffolds.scss */
+#scaffold #error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 78, app/assets/stylesheets/scaffolds.scss */
+#scaffold #error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 84, app/assets/stylesheets/scaffolds.scss */
+#scaffold label {
+  display: block;
+}
+/* line 1, app/assets/stylesheets/surveys.scss */
+.mcq {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 7, app/assets/stylesheets/surveys.scss */
+.free-text {
+  height: 50vh !important;
+}
+/* line 5, app/assets/stylesheets/users.scss */
+.user_list_item {
+  background-color: #f4f4f4;
+}
+
+/* line 9, app/assets/stylesheets/users.scss */
+.user_list_item:hover {
+  background-color: white;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.d_none {
+  display: none
+}
+.fs-14 {
+  font-size: 14px
+}
+
+pre {font-family: Consolas,monospace}
+
